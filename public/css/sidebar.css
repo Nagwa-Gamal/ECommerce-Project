@@ -1,0 +1,278 @@
+
+@import url(fontawesome.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,700");
+
+body {
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+/* Basic */
+
+section#search {
+	border-bottom: none;
+	padding-bottom: 0px;
+}
+
+section {
+	border-bottom: 3px solid #eee;
+	padding-bottom: 100px;
+}
+/* Wrapper */
+
+#wrapper {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex; 
+    flex-direction: row-reverse;
+    min-height: 100vh;
+}
+
+/* Main */
+#main > .inner {
+    padding: 70px 10px 70px 10px;
+}
+
+/* Header */
+
+#header { 
+    display: flex;
+    position: relative;
+    background-color: #558dc6;
+    margin: -70px -10px 10px -70px;
+}
+
+#header .logo {
+    display: inline-block;	
+    width: 100%;
+    height: 70px;
+    line-height: 60px;
+}
+#header .logo h1 a {
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	font-weight: 700;
+	margin-right: 50px;
+}
+
+/* Start Navbar */
+.navb ul{
+    overflow: hidden;
+    list-style: none;
+    padding-left: 0;
+    float: right;
+}
+ .navb h1 a{margin: 40px 10px 2px 2px; float: left; color: #222;}
+ .navb ul li{padding: 0px 20px; display: inline-block; font-size: larger;}
+ .navb ul li a{text-decoration: none;color: #f0f0f0; margin-top: 2px;}
+ .navb ul li div{text-align: center; font-weight: bold;}
+ .navb ul li div a{color: #1a1b20;}
+ .dropdown-item{height: 60px;font-size: 1rem;}
+ .navb ul li div form{width: 50px; height: 70px;}
+ .navb ul li.active a,.navb ul li a:hover {color: crimson;}
+ /* End Navbar */
+
+/* End header */
+
+/* Sidebar */
+
+#sidebar { 
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    transition: margin-left 0.5s ease, box-shadow 0.5s ease;
+    background-color: #24252d;
+    position: relative;
+    width: 275px;
+}
+
+#sidebar > .inner {
+    position: relative;
+    width: 275px;
+    padding: 0px 30px;
+}
+
+#sidebar > .inner > #search  {
+    background-color: #2d2e39;
+    height: 100px;
+    width: 275px;
+    display: inline-block;
+}
+#sidebar > .inner > #search input {
+	width: 100%;
+	height: 100px;
+	background-color: transparent;
+	border: none;
+	padding: 0px 2px;
+	color: #fff;
+}
+
+#search form:before {
+	font-family: 'FontAwesome'; 
+    transform: scaleX(-1);
+    color: #fff;
+    content: '\f002';
+    cursor: default;
+    display: block;
+    position: absolute;
+    right: 50px;
+    text-align: left;
+    top: 35px;
+    font-size: 18px;
+}
+
+#sidebar .toggle {
+    text-decoration: none; 
+    transition: left 0.5s ease;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    border: 0;
+    display: block;
+    color: #fff;
+    height: 70px;
+    left: 275px;
+    line-height: 80px;
+    outline: 0;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    text-indent: 100px;
+    top: 0;
+    width: 100px;
+    z-index: 10000;
+}
+
+#sidebar .toggle:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+#sidebar .toggle:before {
+    content: '\f0c9';
+    font-size: 2rem;
+    height: inherit;
+    left: 0;
+    line-height: inherit;
+    position: absolute;
+    text-indent: 0;
+    top: 0;
+    width: inherit;
+}
+
+#sidebar.inactive {
+    margin-left: -280px;
+} 
+
+/* Menu */
+#menu {
+	margin-top: 50px;
+}
+
+#menu ul { 
+    user-select: none;
+    color: #3d4449;
+    font-family: "Roboto Slab", serif;
+    font-family: 400;
+    letter-spacing: 0.075em;
+    list-style: none;
+    margin-bottom: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+#menu ul a,
+#menu ul span {
+	color: #fff;
+    border-bottom: 0;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    font-weight: 300;
+    padding: 15px 0px;
+}
+#menu ul li ul a,
+#menu ul li ul span {
+    padding: 10px 0px;
+}
+
+#menu ul a:hover,
+#menu ul span:hover {
+    color: #535ba0;
+}
+
+#menu ul a.opener,
+#menu ul span.opener { 
+    transition: color 0.2s ease-in-out;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    position: relative;
+}
+
+#menu ul a.opener:before,
+#menu ul span.opener:before {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none !important;
+}
+
+#menu ul a.opener:before,
+#menu ul span.opener:before { 
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+    color: #fff;
+    content: '\f078';
+    position: absolute;
+    right: 0;
+}
+
+#menu ul a.opener:hover:before,
+#menu ul span.opener:hover:before {
+    color: #535ba0;
+}
+
+#menu ul a.opener.active + ul,
+#menu ul span.opener.active + ul {
+    display: block;
+}
+
+#menu ul a.opener.active:before,
+#menu ul span.opener.active:before { 
+    transform: rotate(-180deg);
+}
+
+#menu > ul > li {
+    border-top: solid 1px #1a1b20;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em 0 0 0;
+}
+
+#menu > ul > li > ul {
+    color: #9fa3a6;
+    display: none;
+    margin: 0.5em 0 1.5em 0;
+    padding-left: 1em;
+}
+
+#menu > ul > li > ul a,
+#menu > ul > li > ul span {
+    font-size: 13px;
+}
+
+#menu > ul > li > ul > li {
+    margin: 0.125em 0 0 0;
+    padding: 0.125em 0 0 0;
+}
+
+#menu > ul > li:first-child {
+    border-top: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* End sidebar */

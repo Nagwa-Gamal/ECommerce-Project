@@ -1,0 +1,262 @@
+* {
+
+    box-sizing: border-box;
+}
+.row{margin-right: 0px;}
+.col-md-8{max-width: 55%;}
+.card{
+    background-color: #ebddbd;
+    border: 2px solid #256478;
+    border-radius: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* form update post*/
+.fcolor h3{font-weight: bold; font-style: italic; margin-bottom: 30px; color: #1b4b72}
+.fcolor input{color: #222;}
+.fcolor .finp{width: 300px; height: 150px; border: 1px solid #5e4242;margin: 10px 0px; border-radius: 10%;}
+/* End form update post */
+
+/* Start form profile*/
+.navbp{
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    height: 50px;
+    padding: 5px;
+    margin: 0 auto;
+}
+.navbp ul li{padding: 0px 60px; display: inline-block; font-size:x-large;}
+.navbp ul li a{text-decoration: none;color: #555; margin-top: 2px;}
+.navbp ul li a:hover{color: darkred;}
+
+.pimage{
+    margin: 10px auto;
+    font-weight: bold;
+    font-style: italic;
+    width: 600px;
+    text-align: center;
+}
+/* Start Profile image */
+.prod-box{
+    width: 270px;
+    height: 270px;
+    border-radius: 100%;
+    margin: 40px auto 20px; 
+    overflow: hidden;
+    position: relative;
+    border: 2px dashed #653563;
+}
+.pimage img{width: 100%;height: 100%;}
+.prod-box:hover .prod-feature {
+    margin-top:  30%;
+    transition: all 1.0s ease;
+}
+.prod-feature input[type='submit']:hover{
+    background-color: palevioletred;
+    transition: all .5s ease;
+}
+/* End Profile image */
+.pimage h2{color: brown; font-size: 35px;font-weight: bolder; margin-bottom: 10px;}
+.pimage button{
+    font-weight: bolder;
+    background-color: burlywood;
+    color: #222;
+    width: 150px;
+    height: 50px;
+    border-radius: 20%;
+    margin: 10px;
+}
+
+/* End form profile*/
+
+.info{
+    float: left;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    width: 915px;
+    margin: 0px;
+}
+.info .nav{height: 50px; padding: 5px;}
+.info .nav ul li{padding: 0px 90px; display: inline-block; font-size:x-large;}
+.info .nav ul li a{text-decoration: none;color: #555; margin-top: 2px;}
+.info .nav ul li a:hover{color: darkred;}
+.info .wpost{
+    width: 100%;
+    padding: 10px;
+}
+.info .wpost .imgs{display: inline; float: left; width: 20%;}
+.info .wpost .imgs img{width: 150px;height: 150px;border-radius: 100%; display: inline;}
+.info .wpost h1{text-align: center;}
+.info .wpost .text{display: inline; margin: 10px;width: 70%;}
+.info .wpost .text h4{color: #d87070;}
+.info .wpost .text input{color: #222;}
+.info .wpost button{background-color: maroon;}
+
+
+.col-md-6 input[type='file']{border: none; margin-left: 20px;color: #222;}
+
+/* Start form update */
+
+.box{
+    background-color: rgb(2, 43, 17);
+    width: 550px;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    border: 2px solid sienna;
+    text-align: center;
+    color: #fff;
+}
+
+.box button{
+    background-color: burlywood;
+    width: 80px;
+    height: 50px;
+    padding: 2px 10px;
+    color: #222;
+    border-radius: 40%;
+}
+
+.box input[type='file']{border:none; margin-top: 20px; margin-bottom: 10px; color: #fff;}
+
+/* End form update */
+
+/*start global*/
+.container{
+    width: 1200px;
+    margin: auto;
+}
+/*end global*/
+
+/* Start view Review OR Posts */
+.card-rev{
+    background-color: #bbcdcc;
+    border: 3px dashed darkgoldenrod;
+    border-radius: 15%;
+    height: 325px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.card-rev p{color: #1a1b20; font-size: x-large; margin-left: 40%; margin-top: 50px;}
+.view{
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+.view .imgs{display: inline; float: left; width: 25%; margin-right: 12%;}
+.view .imgs img{width: 200px;height: 200px;border-radius: 100%; display: inline; margin: 15% 15px;}
+.view .imgp {display: inline; float: left; width: 25%; margin-right: 5%; margin-left: 0px}
+.view .imgp img{width: 180px;height: 170px;border-radius: 20%; display: inline; margin: 10px 15px;}
+.view span{float: right;color: #5d561b;margin: 10px 15px 15px;}
+.view .texrate{float: left; margin-left: 50px; margin-bottom: 0px; display: block;}
+.view .rating{float: left; margin-top: 5px;}
+.view .rating i{color: #CACA03;}
+.view h3{color: #6c1b72; font-weight: bold;margin-bottom: 0px;margin-top: 5px;}
+.view h2{color: #1b4b72; font-weight: bold;margin-bottom: 10px;}
+.view .text{display: inline; margin: 2%; width: 40%;}
+.pimg{width: 35px; height: 35px; border-radius: 100% ; margin-top: -5px;}
+.view .text h4{color: #d82070; font-weight: bold; margin-left: 38%;}
+.card .view .text p{color: #1a1b20; font-size: x-large; margin-left: 40%; margin-top: 20px;}
+.view .text input{color: #222;}
+.view button{background-color: maroon; padding: 10px 35px;margin: 20px 30px 0px;}
+.view .del{margin: 20px 1px 10px 270px; background-color: #834242; height: 50px; border-radius: 40%;}
+
+/* End view Review OR Posts */
+
+/* Start view Product */
+.product{
+    margin: 30px 150px;
+    width: 80%;
+    height: auto;
+}
+.product .Proimage{
+    float: left;
+    font-weight: bold;
+    font-style: italic;
+    width: 400px;
+    text-align: center;
+    margin-top: 60px;
+}
+.product .Proimage img{
+    width: 400px;
+    height: 350px;
+    border-radius: 30%;
+    border: 3px dotted #5d561b;
+}
+.product .proinfo{
+    float: left;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    width: 48%;
+    margin-left: 60px;
+}
+.product .proinfo {height: 50px;padding: 5px;}
+.product .proinfo h1{color: #91323f;}
+.product .proinfo span{font-size: larger;}
+.product .proinfo .new-price{margin-left: 15px; color:orchid; font-size: x-large;}
+.product .proinfo .rating{color: rgb(182, 182, 6);}
+.product .proinfo p{font-size: x-large;color: #5e4242; word-wrap: break-word;}
+.product .proinfo a{text-decoration: none;color: #023d4f; font-size: larger;}
+.product .proinfo a:hover{color: darkred;}
+.product .proinfo input{margin-top: 20px; width: 50px;border: 1px solid #555;color: black;border-radius: 10px; display: inline-block;}
+.product .proinfo input[type='text']{width: 250px; height: 100px; padding: 15px; display: block}
+.product .proinfo button{background-color: #800743; padding: 5px 15px; border-radius: 30%; margin-left: 80px; font-size: larger; margin-top: 10px;}
+.product .proinfo .btu{margin-left: 100px; font-size: large;}
+.product .proinfo .subtext{margin-left: 50px}
+/* End view Product */
+
+/* Start view Message */
+.card_message{
+    background-color: #cfbfbc;
+    border: 2px dashed #134b5d;
+    border-radius: 8%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.mes{
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+    width: 100%;
+    padding: 10px;
+}
+.mes .imgs{display: inline; float: left; width: 25%; margin-right: 12%;}
+.mes .imgs img{width: 200px;height: 200px;border-radius: 100%; display: inline; margin: 15% 15px;}
+.mes span{float: right;color: #534b04;margin: 2px 15px 15px;}
+.mes h3{color: #1b4b72; font-weight: bold;margin-bottom: 0px; margin-top:0px;}
+.mes .text{display: inline; margin: 2%;}
+.mes .pimg{width: 30px; height: 30px; border-radius: 100% ; margin-top: -5px;}
+.mes .text h4{color: #d87070; font-weight: bold}
+.mes .text p{color: #1a1b20; font-size: x-large; margin-left: 25%; margin-top: 20px;}
+.mes .text input{color: #000; font-weight: bold; width: 80%; height: 50px; border:none;}
+.mes button{background-color: #b50227; padding: 10px 35px;margin: 10px 45% 0px; border-radius: 30%;}
+
+
+/* End view Message */
+
+/* Start view Order */
+
+.card-order{
+    background-color: #bbb0bb;
+    border: 2px dotted oldlace;
+    border-radius: 15%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.card-order .del2 {margin: 55px 1px 2px 220px;}
+.card-order .up{margin-left: -80px;}
+
+/* End view Order */
+
+/* Start view Cart */
+
+.card-cart{
+    background-color: #48518654;
+    border: 4px double brown;
+    border-radius: 15%; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* End view Cart */
